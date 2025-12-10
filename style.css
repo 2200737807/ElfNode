@@ -722,8 +722,8 @@ body {
     }
 
     .links-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+        gap: 15px;
+        max-width: 1000px;
     }
 
     .splash-text {
@@ -731,47 +731,37 @@ body {
     }
 }
 
-/* 中等屏幕样式 */
+/* 中等屏幕样式 (平板横屏) */
 @media (min-width: 769px) and (max-width: 1023px) {
     .container {
         max-width: 900px;
         padding: 0 1.5rem;
     }
 
-    .search-container {
-        flex-direction: row;
-        max-width: 600px;
-    }
-
-    #searchInput {
-        flex: 1;
-        margin-right: 10px;
-        margin-bottom: 0;
-    }
-
-    .social-links {
-        flex-direction: row;
-        margin-bottom: 2rem;
-    }
-
-    .social-link {
-        margin: 0 10px;
-    }
-
     .links-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
+        flex-wrap: wrap;
+        gap: 12px;
+        max-width: 700px;
     }
 
-    .avatar-container {
-        width: 150px;
-        height: 150px;
+    .link-card {
+        width: 65px;
+        height: 65px;
+    }
+
+    .avatar-wrapper {
+        width: 130px;
+        height: 130px;
         margin-bottom: 1.5rem;
+    }
+
+    .name {
+        font-size: 2rem;
     }
 
     .tag {
         padding: 0.4rem 1rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .splash-text {
@@ -783,32 +773,58 @@ body {
 @media (max-width: 768px) {
     .container {
         padding: 0 1.2rem;
+        gap: 20px;
     }
 
     .search-container {
-        max-width: 500px;
+        max-width: 400px;
     }
 
     .links-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.2rem;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 600px;
     }
 
-    .avatar-container {
-        width: 130px;
-        height: 130px;
+    .link-card {
+        width: 60px;
+        height: 60px;
+    }
+
+    .link-icon {
+        font-size: 1.2rem;
+    }
+
+    .link-title {
+        font-size: 0.6rem;
+    }
+
+    .avatar-wrapper {
+        width: 110px;
+        height: 110px;
+    }
+
+    .name {
+        font-size: 1.8rem;
     }
 
     .splash-text {
         font-size: 2.5rem;
     }
 
-    #name {
-        font-size: 2rem;
+    .tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.9rem;
     }
 
-    .tag {
-        font-size: 0.85rem;
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
     }
 }
 
@@ -816,59 +832,74 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
+        gap: 15px;
     }
 
     .search-container {
-        flex-direction: column;
         max-width: 100%;
     }
 
-    #searchInput {
-        margin-bottom: 10px;
+    .links-grid {
+        flex-wrap: wrap;
+        gap: 8px;
+        max-width: 350px;
+    }
+
+    .link-card {
+        width: 55px;
+        height: 55px;
+        gap: 4px;
+    }
+
+    .link-icon {
+        font-size: 1.1rem;
+    }
+
+    .link-title {
+        font-size: 0.55rem;
     }
 
     .social-links {
-        margin-bottom: 1.5rem;
+        gap: 10px;
+        margin-bottom: 5px;
     }
 
-    .links-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 
-    .avatar-container {
-        width: 110px;
-        height: 110px;
-        margin-bottom: 1rem;
+    .avatar-wrapper {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 8px;
     }
 
     .splash-text {
         font-size: 2rem;
     }
 
-    #name {
-        font-size: 1.8rem;
+    .name {
+        font-size: 1.6rem;
     }
 
     .tag {
-        font-size: 0.8rem;
-        padding: 0.3rem 0.8rem;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.8rem;
     }
 
     .quote-container {
+        padding: 10px 20px;
+    }
+
+    .quote {
         font-size: 0.9rem;
     }
 
-    .link-card {
-        padding: 1.2rem;
-    }
-
-    .link-title {
-        font-size: 1rem;
-    }
-
-    .footer-text {
-        font-size: 0.8rem;
+    .footer {
+        margin-top: 10px;
+        font-size: 0.75rem;
     }
 }
 
