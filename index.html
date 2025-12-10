@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人引导页</title>
+    <title>ElfNode's Personal Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- 启动动画 -->
+    <div id="splashScreen" class="splash-screen">
+        <div id="splashText1" class="splash-text">hello</div>
+        <div id="splashText2" class="splash-text">我是绘念</div>
+        <div id="splashText3" class="splash-text">欢迎访问我的个人主页</div>
+    </div>
+
     <!-- 动态背景 -->
     <div class="background-wrapper">
         <div class="animated-bg"></div>
@@ -15,34 +22,33 @@
         <div class="mesh-gradient"></div>
     </div>
 
-    <!-- 主容器 -->
     <div class="container">
         <!-- 搜索框 -->
-        <div class="search-container">
+        <section class="search-container">
             <div class="search-wrapper">
                 <div class="search-box">
                     <div class="search-engine-switch">
-                        <button class="engine-btn active" data-engine="google" title="Google">
+                        <button class="engine-btn active" data-engine="google">
                             <i class="fab fa-google"></i>
                         </button>
-                        <button class="engine-btn" data-engine="baidu" title="百度">
-                            <i class="fas fa-paw"></i>
+                        <button class="engine-btn" data-engine="baidu">
+                            <i class="fab fa-baidu"></i>
                         </button>
                     </div>
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchInput" placeholder="搜索任何内容...">
-                    <button id="searchBtn" class="search-btn">
+                    <input type="text" id="searchInput" placeholder="通往里世界...">
+                    <button class="search-btn" id="searchBtn">
                         <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- 头像区域 -->
-        <div class="profile-section">
+        <!-- 个人资料区域 -->
+        <main class="profile-section">
             <div class="avatar-wrapper">
+                <img id="avatar" class="avatar" src="" alt="头像">
                 <div class="avatar-glow"></div>
-                <img id="avatar" src="" alt="Avatar" class="avatar">
                 <div class="avatar-ring"></div>
             </div>
             <h1 id="name" class="name"></h1>
@@ -52,20 +58,17 @@
                 <p id="quote" class="quote"></p>
                 <i class="fas fa-quote-right quote-icon-right"></i>
             </div>
-        </div>
+        </main>
 
         <!-- 社交链接 -->
-        <div id="socialLinks" class="social-links"></div>
+        <section id="socialLinks" class="social-links"></section>
 
         <!-- 图标链接网格 -->
-        <div id="links" class="links-grid"></div>
+        <section id="links" class="links-grid"></section>
 
         <!-- 页脚 -->
         <footer class="footer">
-            <p>
-                &copy; <span id="year"></span>
-                <a href="https://github.com/2200737807/ProfileGenie" target="_blank" rel="noopener noreferrer" class="footer-link">绘念</a> 
-            </p>
+            <p>© 2023-<span id="year"></span> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="footer-link">CC BY-NC-SA 4.0</a> ElfNode.</p>
         </footer>
     </div>
 

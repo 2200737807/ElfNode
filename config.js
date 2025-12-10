@@ -3,7 +3,6 @@ window.config = {
     profile: {
         avatar: 'https://pic1.imgdb.cn/item/690226303203f7be00b1b8eb.webp',
         name: '绘念',
-        tags: ['二手程序员', '日韩定制师', '桌搭爱好者'],
         quote: '隐约雷鸣，阴霾天空，但盼风雨来，能留你在此。'
     },
 
