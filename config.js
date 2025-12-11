@@ -1,4 +1,4 @@
-window.config = {
+window。config = {
     // 个人资料
     profile: {
         avatar: 'https://pic1.imgdb.cn/item/690226303203f7be00b1b8eb.webp',
@@ -81,6 +81,11 @@ window.config = {
             title: '代理订阅',
             icon: 'fa fa-cloud',
             url: 'https://submix.103000.vip'
+        },
+        {
+            title: '自用工具',
+            icon: 'fa fa-wrench',
+            url: 'https://tools.103000.vip/'
         },
     ]
 };
