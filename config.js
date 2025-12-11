@@ -75,7 +75,7 @@ window.config = {
         {
             title: '自用导航',
             icon: 'fa fa-bars',
-            url: 'https://nav.103000.vip'
+            url: 'https://n.103000.vip'
         },
         {
             title: '代理订阅',
