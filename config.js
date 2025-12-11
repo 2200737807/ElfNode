@@ -1,4 +1,4 @@
-window。config = {
+window.config = {
     // 个人资料
     profile: {
         avatar: 'https://pic1.imgdb.cn/item/690226303203f7be00b1b8eb.webp',
